@@ -1,0 +1,7 @@
+Order deny,allow
+Deny from all
+Allow from localhost
+Allow from 127.0.0.1
+#Allow from <Your Workstation Public IP Address>
+Allow from app.elitehax.it
+Allow from elitehax.it
