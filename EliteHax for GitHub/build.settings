@@ -1,0 +1,93 @@
+-- Supported values for orientation:
+-- portrait, portraitUpsideDown, landscapeLeft, landscapeRight
+
+settings = {
+	
+	orientation = {
+		default = "portrait",
+        supported =
+        {
+                "portrait", "portraitUpsideDown",
+        },
+	},
+
+	
+    plugins =
+    {
+        ["plugin.pasteboard"] =
+        {
+            publisherId = "com.coronalabs",
+        },
+        ["plugin.openssl"] =
+        {
+            publisherId = "com.coronalabs",
+        },
+        ["plugin.OneSignal"] =
+        {
+            publisherId = "com.onesignal",
+        },
+        ["plugin.google.play.services"] =
+        {
+            publisherId = "com.coronalabs",
+            supportedPlatforms = { android=true, ["android-kindle"]=true },
+        },
+        ["plugin.google.iap.v3"] =
+        {
+            publisherId = "com.coronalabs"
+        },
+        ["plugin.notifications"] =
+        {
+            publisherId = "com.coronalabs"
+        },
+        ["plugin.gpgs"] =
+        {
+            publisherId = "com.coronalabs",
+            supportedPlatforms = { android=true }
+        },
+    },
+	
+	iphone = {
+		plist = {
+            CoronaWindowMovesWhenKeyboardAppears = true,
+			UIStatusBarHidden = true,
+			UIPrerenderedIcon = true, -- set to false for "shine" overlay
+			UIApplicationExitsOnSuspend = true,
+            UIBackgroundModes = {"remote-notification"},
+            -- Icon image files table
+            CFBundleIconFiles = {
+                "Icon.png",
+                "Icon@2x.png",
+                "Icon-60.png",
+                "Icon-60@2x.png",
+                "Icon-60@3x.png",
+                "Icon-72.png",
+                "Icon-72@2x.png",
+                "Icon-76.png",
+                "Icon-76@2x.png",
+                "Icon-167.png",
+                "Icon-Small-40.png",
+                "Icon-Small-40@2x.png",
+                "Icon-Small-50.png",
+                "Icon-Small-50@2x.png",
+                "Icon-Small.png",
+                "Icon-Small@2x.png",
+                "Icon-Small@3x.png"
+            },
+		}
+	},
+	
+    android =
+    {
+        googlePlayGamesAppId = "618274826721",
+        versionCode = "307",
+        coronaWindowMovesWhenKeyboardAppears = true,
+        usesExpansionFile = false,
+        usesPermissions =
+        {
+            "android.permission.INTERNET",
+            "com.android.vending.CHECK_LICENSE",
+            "android.permission.GET_ACCOUNTS",
+            "com.android.vending.BILLING"
+        }
+    }
+}
