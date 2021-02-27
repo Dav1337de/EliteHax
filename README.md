@@ -56,15 +56,12 @@ The name of the php script invoked is self-explanatory, the schedule is standard
 There is an hardcoded password in the scripts to be used as parameter, to avoid unwanted requests from web crawlers. In addition remember that 'jobs' directory access is limited with .htaccess file.
 ```
 0       2       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/startHackTournament.php?pwd=HardCodedToChange --insecure  >> /tmp/tournament.log
-#       0       18      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/startHackTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
 0       0       *       *       mon     /usr/bin/curl -sL https://app.elitehax.it/jobs/resetWeeklyLeaderboard.php?pwd=HardCodedToChange >> /tmp/task_result.txt
 10      0       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/cleanup.php?pwd=HardCodedToChange --insecure >> /tmp/task_result.txt
 0       0       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/saveDailyAttackStatistics.php?pwd=HardCodedToChange --insecure > /dev/null
 30      *       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/updateBotMalware.php?pwd=HardCodedToChange --insecure > /dev/null
-#       0       12      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/stopHackTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
 0       19      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/stopHackDefendTournament.php?pwd=HardCodedToChange >> /tmp/tournament.log
 *       *       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/updatetask.php?pwd=HardCodedToChange --insecure >> /tmp/task_result.txt
-#       0       19      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/stopHackTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
 0       18      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/startHackDefendTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
 0       0       1       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/resetMonthlyLeaderboard.php?pwd=HardCodedToChange >> /tmp/task_result.txt
 0       4       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/startScoreTournament.php?pwd=HardCodedToChange  --insecure >> /tmp/tournament.log
@@ -72,7 +69,6 @@ There is an hardcoded password in the scripts to be used as parameter, to avoid 
 0       3       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/stopHackTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
 0       8       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/stopScoreTournament.php?pwd=HardCodedToChange --insecure  >> /tmp/tournament.log
 0       15      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/stopHackTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
-#       0       11      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/startHackTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
 0       0       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/resetDailyWallet.php?pwd=HardCodedToChange --insecure >> /tmp/task_result.txt
 0       0       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/stopScoreTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
 0       20      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/startScoreTournament.php?pwd=HardCodedToChange  >> /tmp/tournament.log
