@@ -4,7 +4,7 @@ EliteHax - Hacker World: Official Repository by Dav1337de
 ### CONTENTS ###
 [1. INTRO](https://github.com/Dav1137de/EliteHax/blob/main/README.md#1-intro-1)
 
-[2. RESOURCES](https://github.com/Dav1137de/EliteHax/blob/main/README.md#2-resources-1)
+[2. Resources](https://github.com/Dav1137de/EliteHax/blob/main/README.md#2-resources-1)
 
    [2.1 Android App](https://github.com/Dav1137de/EliteHax/blob/main/README.md#21-android-app-1)
 
@@ -13,6 +13,16 @@ EliteHax - Hacker World: Official Repository by Dav1337de
    [2.3 Database](https://github.com/Dav1137de/EliteHax/blob/main/README.md#23-database-1)
 
    [2.4 Jobs](https://github.com/Dav1137de/EliteHax/blob/main/README.md#24-jobs-1)
+   
+   [2.5 Miscellaneous](https://github.com/Dav1137de/EliteHax/blob/main/README.md#25-miscellaneous-1)
+   
+[3. Security Practices](https://github.com/Dav1137de/EliteHax/blob/main/README.md#3-security-practices-1)
+
+[4. Issues](https://github.com/Dav1137de/EliteHax/blob/main/README.md#4-issues-1)
+
+[5. Statistics](https://github.com/Dav1137de/EliteHax/blob/main/README.md#5-statistics-1)
+
+[6. Contacts](https://github.com/Dav1137de/EliteHax/blob/main/README.md#6-contacts-1)
 
 
 ### 1. INTRO ###
@@ -24,7 +34,7 @@ But life changes and suddenly you don't have time anymore to pursue an hobby tha
 Since I don't have time to continue the development and take care of the server and ethically I cannot give users data to someone else, I've decided to end EliteHax on March 2021.
 I am very grateful to the community that always supported me, so I decided to release the source code under MIT License, hoping that someone will rebuild it and EliteHax could reborn from the ashes in the future.
 
-### 2. RESOURCES ###
+### 2. Resources ###
 I uploaded all the resources regarding the Android app, EliteHax backend, database schema and some other miscellaneous stuff that can be useful for a potential developer.
 I am not a professional developer, so the code could look a bit 'Spaghetti Code', but I'm from Italy and I love spaghetti! Jokes apart, there are some very useful comments here and there, read them and use them. Naming convention is also pretty good, although not perfect.
 Before uploading the code to GitHub, I removed all the encryption keys, hardcoded passwords and API keys from the code, adding specific comments that starts with 'GitHub Note:'; make sure to search for those comment and complete the information, otherwise it won't work.
@@ -78,6 +88,23 @@ There is an hardcoded password in the scripts to be used as parameter, to avoid 
 0       11      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/startHackDefendTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
 ```
 
+### 2.5 Miscellaneous ###
+In the folder 'Miscellaneous' you can find additional resources such as historical screenshots, TODO lists, notes, reference for some lists in the game and so on. 
+Maybe you will find something useful, maybe not.
+
+
+### 3. Security Practices ###
+As a cybersecurity professional, although WebApp, Mobile and Code security are not my specialization, I always tried to put a lot of effort on security practices and I would like that anyone that will eventually rebuild EliteHax will continue to follow or improve security practices, for the benefit of the players and game stability.
+I always tried to use state of the art encryption and hashing mechanism (AES-256, SHA-256, HMAC), at some point I added nonce to avoid replay attacks, certificate pinning to make MITM more difficult, package check to avoid app tampering and most importantly input validation! 
+Always start to validate the inputs on the client before sending, but remember that client can be tampered, so ALWAYS validate the inputs on the backend!!! Don't trust the client app.
+I also tried to add various anti-cheat protection and detection mechanism, blocking login from proxy/anonymizer, registrations from temporary emails, check for multiple users from same device/connection and so on. Honestly I hated doing this part, I prefer to focus on expanding the features, but at some point unfortunately it was necessary.
+
+
+### 4. Issues ###
+
+### 5. Statistics ###
+
+### 6. Contacts ###
 
 
 
