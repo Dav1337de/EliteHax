@@ -20,9 +20,11 @@ EliteHax - Hacker World: Official Repository by Dav1337de
 
 [4. Issues](https://github.com/Dav1137de/EliteHax/blob/main/README.md#4-issues-1)
 
-[5. Statistics](https://github.com/Dav1137de/EliteHax/blob/main/README.md#5-statistics-1)
+[5. Architecture](https://github.com/Dav1137de/EliteHax/blob/main/README.md#5-architecture-1)
 
-[6. Contacts](https://github.com/Dav1137de/EliteHax/blob/main/README.md#6-contacts-1)
+[6. Statistics](https://github.com/Dav1137de/EliteHax/blob/main/README.md#6-statistics-1)
+
+[7. Contacts](https://github.com/Dav1137de/EliteHax/blob/main/README.md#7-contacts-1)
 
 
 ### 1. INTRO ###
@@ -92,20 +94,36 @@ There is an hardcoded password in the scripts to be used as parameter, to avoid 
 In the folder 'Miscellaneous' you can find additional resources such as historical screenshots, TODO lists, notes, reference for some lists in the game and so on. 
 Maybe you will find something useful, maybe not.
 
-
 ### 3. Security Practices ###
 As a cybersecurity professional, although WebApp, Mobile and Code security are not my specialization, I always tried to put a lot of effort on security practices and I would like that anyone that will eventually rebuild EliteHax will continue to follow or improve security practices, for the benefit of the players and game stability.
-I always tried to use state of the art encryption and hashing mechanism (AES-256, SHA-256, HMAC), at some point I added nonce to avoid replay attacks, certificate pinning to make MITM more difficult, package check to avoid app tampering and most importantly input validation! 
+I always tried to use state of the art encryption and hashing mechanism (AES-256, SHA-256, HMAC), use prepared statement to avoid any kind of SQL Injection, at some point I added nonce to avoid replay attacks, certificate pinning to make MITM more difficult, package check to avoid app tampering and most importantly input validation! 
+I also put a CDN from CloudFlare to mitigate incoming attacks, hide the origin and improve performance around the world.
 Always start to validate the inputs on the client before sending, but remember that client can be tampered, so ALWAYS validate the inputs on the backend!!! Don't trust the client app.
 I also tried to add various anti-cheat protection and detection mechanism, blocking login from proxy/anonymizer, registrations from temporary emails, check for multiple users from same device/connection and so on. Honestly I hated doing this part, I prefer to focus on expanding the features, but at some point unfortunately it was necessary.
 
-
 ### 4. Issues ###
+I'm sure there are numerous uncovered bugs, but generally speaking the code is not that bad at all. Just to give you an idea, the game has been active for 1.5 years without any kind of maintenance and only few things are not working.
+The most important issues that I'm aware of are:
+- Tournaments & Weekly/Monthly Leaderboards: the combination of code and crontab schedule struggle when there is a time change (Daylight Standard Time vs Standard Time), manual SQL queries could be necessary; Another issue can be a deadlock during this scheduled jobs (see below);
+- Deadlocks: sometimes there are deadlocks on mysql database. I'm not a sql master, so some troublesome queries could probably be optimized; server resources could also mitigate this issues.
+- Lack of support for emoticon in chat: this is an issue with Corona/Solar2D; it can be workaround with extremely high effort.
+Even if it's not a real issue, UI was never the greatest point of EliteHax... a good graphic designer can improve the impact of the game on new users a lot!
 
-### 5. Statistics ###
+### 5. Architecture ###
+The architecture is very simple.. a single server.
+It's a CentOS 7 with Plesk pre-installed, hosted on Ionos with 1 vCPU, 1GB RAM and 50GB SSD drive, for something around €15/month (remember that it's not a pay2win game!).
+Probably additional vCPU would be nice, RAM is not a huge issue, average is 27% and swap space is never used. Disk space is at 50%, but I offloaded backup files.
+I think this is the bare minimum to run EliteHax in a stable way, of course with a good connection. I am also extremely satisfied by IONOS, I always had an incredible uptime and never experienced any serious issue with them.
+I also think it could be nice to leverage docker to improve scalability/performance, but I never had time to try it.
 
-### 6. Contacts ###
+### 6. Statistics ###
+I started building the game on December 2016 and quit development on October 2018. During this time I wrote a total of 63.181 lines of code, 45.253 Client Side and 17.928 Server Side.
+EliteHax was downloaded 100.000+ times and had 23,853 registered users.
+In the 'Miscellaneous' folder you can also find the final leaderboard and in-game statistics.
 
+### 7. Contacts ###
+You can contact me at app.elitehax.it@gmail.com or on Discord: Dav1337de#4674 or https://discord.gg/BZ5tYxBDuw.
+I am willing to give advices or explanation on specific parts of the code to whoever wants to rebuild the game, but I'll not take any active role in it.
 
 
 
