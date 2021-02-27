@@ -2,7 +2,7 @@
 EliteHax - Hacker World: Official Repository by Dav1337de
 
 ### CONTENTS ###
-[##  1. INTRO         ##](
+[##  1. INTRO         ##](https://github.com/Dav1137de/EliteHax/blob/main/README.md#1-intro-1)
 
 ###      CONTENTS      ###
 ##  1. INTRO            ##
