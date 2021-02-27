@@ -1,6 +1,9 @@
 # EliteHax
 EliteHax - Hacker World: Official Repository by Dav1337de
 
+### CONTENTS ###
+[##  1. INTRO         ##](
+
 ###      CONTENTS      ###
 ##  1. INTRO            ##
 ##  2. RESOURCES        ##
