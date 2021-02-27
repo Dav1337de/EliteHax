@@ -1,0 +1,1 @@
+INSERT INTO `private_chat`(`uuid1`, `uuid2`, `message`, `timestamp`) SELECT '<UUID_OF_SYSTEM_USER>',uuid,'Test System Message',NOW() FROM user

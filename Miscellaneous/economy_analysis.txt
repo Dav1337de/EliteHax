@@ -1,0 +1,4 @@
+Contributo inattivi 7 giorni:
+
+SELECT user_id,username,((missions+bots)-upgrades) as DIFF,last_login FROM `economy` JOIN user ON economy.user_id=user.id WHERE last_login<'2017-06-21 00:00:00'  
+ORDER BY `DIFF`  DESC

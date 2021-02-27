@@ -1,0 +1,15 @@
+Type	Severity	Integrity	Availability	
+Remote Code Execution	C	1	0	100
+Default Password	C	1	0	100
+Buffer Overflow	H	1	0/1	90
+Heap Overflow	H	1	0/1	90
+Authentication Bypass	H	1	0	90
+Denial Of Service	H	1	0/1	80
+Memory Corruption	H	1	0/1	80
+Use-After-Free	M	0/1	0	70
+Denial Of Service	M	0/1	0/1	70
+Memory Corruption	M	0/1	0/1	70
+Integer Overflow	M	0	1	0
+				
+Authentication	L	0	0	
+Services is running	I	0	0	

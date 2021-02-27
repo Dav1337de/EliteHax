@@ -1,0 +1,21 @@
+Activity	Type	PHP	Minutes
+1	Network Host Scan	netHostScan.php	5
+2	Network Port Scan	netPortScan.php	20
+3	Social Engineering	netSocialEng.php	60
+4	Host Port Scan	hostPortScan.php	10
+5	Host Fingerprint	hostFingerprint.php	20
+6	Host Vulnerability Scan	hostVulnScan.php	30
+7	Service Fingerprint	serviceFingerprint.php	2
+8	Service Vulnerability Scan	serviceVulnScan.php	5
+9	Vulnerability Exploitation	vulnExploit.php	10
+10	Bruteforce Users and Passwords	bruteforceUser.php	15
+11	Bruteforce Passwords	bruteforcePass.php	10
+12	Discover Users	hostDiscoverUser.php	10
+13	Discover Connections	hostDiscoverConnections.php	10
+14	Privilege Escalation	hostEscalatePrivilege.php	10
+15	Install Proxy	hostActionProxy.php	30
+16	Exfiltrate Data	hostActionDataexfiltration.php	60
+17	Dump DB	hostActionDumpdb.php	60
+18	Tamper Data	hostActionAlterdata.php	60
+19	Shutdown	hostActionShutdown.php	60
+20	Ransomware	hostActionRansomware.php	60

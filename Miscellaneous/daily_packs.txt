@@ -1,0 +1,30 @@
+1-10 days
+Small Pack
+Small Money
+Small Overclock
+75CC
+100CC
+
+11-20 days
+Medium Pack
+Medium Money
+Medium Overclock
+150CC
+200CC
+
+21-30
+Large Pack
+Large Money
+Large Overclock
+300CC
+400CC
+
+31+ days
+Large Pack
+Large Overclock
+300CC
+400CC
+500CC
+
+IP Change		5%
+Skill Tree Reset	5%
