@@ -8,6 +8,7 @@ EliteHax - Hacker World: Official Repository by Dav1337de
 ##  2.2 Backend Server  ##
 ##  2.3 Database        ##
 ##  2.4 Jobs            ##
+##  3.
 
 
 ### 1. INTRO ###
@@ -38,6 +39,7 @@ In the main folder you only have few files that are version independent, related
 - 'jobs': maintenance jobs that must be invoked with a task scheduler/cron/whatever, see '2.4 Jobs' for additional details;
 - 'tutorial': the official tutorial for EliteHax; it's a good reference to see how the game looked like and used to work;
 - 'v3.0.7': the backend/API of the last EliteHax version; here you have most of the backend logic.
+Please note that some of the folders contains .htaccess file to limit the requests to localhost and to developer workstation ip address (to be modified).
 
 ### 2.3 Database ###
 In the folder 'EliteHax database' you have a .sql file that you can use to build the complete EliteHax database schema from scratch.
@@ -45,6 +47,35 @@ In contains all the tables, columns, types, primary/foreign keys and integrity c
 Of course I will never upload user data since I had always care about the privacy of my players.
 
 ### 2.4 Jobs ###
+There are several jobs scheduled using crontab, but you can use the task manager of your choice.
+The name of the php script invoked is self-explanatory, the schedule is standard crontab syntax. I think if someone is going to rebuild EliteHax, he/she must be able to read this and understand what to do, otherwise he/she should give up even before starting.
+There is an hardcoded password in the scripts to be used as parameter, to avoid unwanted requests from web crawlers. In addition remember that 'jobs' directory access is limited with .htaccess file.
+0       2       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/startHackTournament.php?pwd=HardCodedToChange --insecure  >> /tmp/tournament.log
+#       0       18      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/startHackTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
+0       0       *       *       mon     /usr/bin/curl -sL https://app.elitehax.it/jobs/resetWeeklyLeaderboard.php?pwd=HardCodedToChange >> /tmp/task_result.txt
+10      0       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/cleanup.php?pwd=HardCodedToChange --insecure >> /tmp/task_result.txt
+0       0       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/saveDailyAttackStatistics.php?pwd=HardCodedToChange --insecure > /dev/null
+30      *       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/updateBotMalware.php?pwd=HardCodedToChange --insecure > /dev/null
+#       0       12      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/stopHackTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
+0       19      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/stopHackDefendTournament.php?pwd=HardCodedToChange >> /tmp/tournament.log
+*       *       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/updatetask.php?pwd=HardCodedToChange --insecure >> /tmp/task_result.txt
+#       0       19      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/stopHackTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
+0       18      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/startHackDefendTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
+0       0       1       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/resetMonthlyLeaderboard.php?pwd=HardCodedToChange >> /tmp/task_result.txt
+0       4       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/startScoreTournament.php?pwd=HardCodedToChange  --insecure >> /tmp/tournament.log
+0       *       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/game_statistics.php?pwd=HardCodedToChange --insecure >> /tmp/task_result.txt
+0       3       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/stopHackTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
+0       8       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/stopScoreTournament.php?pwd=HardCodedToChange --insecure  >> /tmp/tournament.log
+0       15      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/stopHackTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
+#       0       11      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/startHackTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
+0       0       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/resetDailyWallet.php?pwd=HardCodedToChange --insecure >> /tmp/task_result.txt
+0       0       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/stopScoreTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
+0       20      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/startScoreTournament.php?pwd=HardCodedToChange  >> /tmp/tournament.log
+0       *       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/updateBotMalware.php?pwd=HardCodedToChange --insecure > /dev/null
+0       12      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/stopHackDefendTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
+0       14      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/startHackTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
+0       11      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/startHackDefendTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
+
 
 
 
