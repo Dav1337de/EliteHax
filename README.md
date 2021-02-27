@@ -3,11 +3,17 @@ EliteHax - Hacker World: Official Repository by Dav1337de
 
 ### CONTENTS ###
 [1. INTRO](https://github.com/Dav1137de/EliteHax/blob/main/README.md#1-intro-1)
+
 [2. RESOURCES](https://github.com/Dav1137de/EliteHax/blob/main/README.md#2-resources-1)
+
 [2.1 Android App](https://github.com/Dav1137de/EliteHax/blob/main/README.md#21-android-app-1)
+
 [2.2 Backend Server](https://github.com/Dav1137de/EliteHax/blob/main/README.md#22-backend-server-1)
+
 [2.3 Database](https://github.com/Dav1137de/EliteHax/blob/main/README.md#23-database-1)
+
 [2.4 Jobs](https://github.com/Dav1137de/EliteHax/blob/main/README.md#24-jobs-1)
+
 
 ### 1. INTRO ###
 I'm Dav1337de, developer of EliteHax. 
@@ -48,6 +54,7 @@ Of course I will never upload user data since I had always care about the privac
 There are several jobs scheduled using crontab, but you can use the task manager of your choice.
 The name of the php script invoked is self-explanatory, the schedule is standard crontab syntax. I think if someone is going to rebuild EliteHax, he/she must be able to read this and understand what to do, otherwise he/she should give up even before starting.
 There is an hardcoded password in the scripts to be used as parameter, to avoid unwanted requests from web crawlers. In addition remember that 'jobs' directory access is limited with .htaccess file.
+```
 0       2       *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/startHackTournament.php?pwd=HardCodedToChange --insecure  >> /tmp/tournament.log
 #       0       18      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/startHackTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
 0       0       *       *       mon     /usr/bin/curl -sL https://app.elitehax.it/jobs/resetWeeklyLeaderboard.php?pwd=HardCodedToChange >> /tmp/task_result.txt
@@ -73,6 +80,7 @@ There is an hardcoded password in the scripts to be used as parameter, to avoid 
 0       12      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/stopHackDefendTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
 0       14      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/startHackTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
 0       11      *       *       *       /usr/bin/curl -sL https://app.elitehax.it/jobs/startHackDefendTournament.php?pwd=HardCodedToChange --insecure >> /tmp/tournament.log
+```
 
 
 
