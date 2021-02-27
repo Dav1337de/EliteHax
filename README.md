@@ -6,13 +6,13 @@ EliteHax - Hacker World: Official Repository by Dav1337de
 
 [2. RESOURCES](https://github.com/Dav1137de/EliteHax/blob/main/README.md#2-resources-1)
 
-..*[2.1 Android App](https://github.com/Dav1137de/EliteHax/blob/main/README.md#21-android-app-1)
+⋅⋅⋅[2.1 Android App](https://github.com/Dav1137de/EliteHax/blob/main/README.md#21-android-app-1)
 
-..*[2.2 Backend Server](https://github.com/Dav1137de/EliteHax/blob/main/README.md#22-backend-server-1)
+⋅⋅⋅[2.2 Backend Server](https://github.com/Dav1137de/EliteHax/blob/main/README.md#22-backend-server-1)
 
-..*[2.3 Database](https://github.com/Dav1137de/EliteHax/blob/main/README.md#23-database-1)
+⋅⋅⋅[2.3 Database](https://github.com/Dav1137de/EliteHax/blob/main/README.md#23-database-1)
 
-..*[2.4 Jobs](https://github.com/Dav1137de/EliteHax/blob/main/README.md#24-jobs-1)
+⋅⋅⋅[2.4 Jobs](https://github.com/Dav1137de/EliteHax/blob/main/README.md#24-jobs-1)
 
 
 ### 1. INTRO ###
