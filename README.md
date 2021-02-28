@@ -65,7 +65,7 @@ In the main folder you only have few files that are version independent, related
 - 'tutorial': the official tutorial for EliteHax; it's a good reference to see how the game looked like and used to work;
 - 'v3.0.7': the backend/API of the last EliteHax version; here you have most of the backend logic.
 
-Please note that some of the folders contains .htaccess file to limit the requests to localhost and to developer workstation ip address (to be modified).
+Please note that some of the folders contains .htaccess file to limit the requests to localhost and to developer workstation ip address (you need to modify it).
 
 ### 2.3 Database ###
 In the folder 'EliteHax database' you have a .sql file that you can use to build the complete EliteHax database schema from scratch.
