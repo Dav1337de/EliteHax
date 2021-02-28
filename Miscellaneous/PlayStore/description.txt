@@ -1,0 +1,31 @@
+EliteHax - Hacker World is a hacking simulation game where you take up the role of a hacker.
+You can gain Score and Reputation by upgrading your defensive and offensive arsenal and attacking other hackers to steal their virtual money.
+You can also gain money and earn experience by completing Missions and compete in tournaments!
+
+Another important aspect of the game is joining Crews to socialize, cooperate with other hackers with common goals and battle other Crews with Crew Wars.
+
+EliteHax is not a P2W game! In-App Purchases are cosmetics only.
+
+Main features:
+- 18 Upgrades Types: choose different kind of balancing between offensive and defensive arsenal and other strategic upgrades
+- 6 Different types of Attack: choose between 3 types of Exploit and 3 types of Malware based on your victim defenses
+- 25 Research Types: research new stuff to improve your overall game experience
+- Missions and Skill Tree: Complete daily missions to earn XP, level up and unlock unique hacking skills to become the best hacker
+- Tournaments: EliteHax offers 2 types of tournaments! A Score Tournament that is more suited for new players and Hack Tournament for oldschool and veteran hackers. Tournaments have both a personal and a crew leaderboard with different rewards
+- Achievements: 23 different types of achievements to complete
+- Overall/Monthly/Weekly leaderboards: do you think that top players are too strong? You can easily rank better than them in monthly and weekly leaderboards!
+- Community oriented: lots of social features including Crews, 3 types of chat (Global, Crew, Private) and awesome community
+- Crew Wars: build your Crew datacenter with 12 different upgrades, defend it from incoming attacks, scan the world regions to find your enemy crews and attack them with the help of your crew members!
+- Overclocks: 3 different overclock types to double the speed of your tasks, reduce the timer by 1 hour or instantly finish all your tasks
+- Customizable Player Profile: choose your favorite profile picture and show your hacker profile and statistics to other players
+- Skins: if you are not a fan of the green, choose between many other skin colors
+- Statistics: if you love statistics, EliteHax won't disappoint you with advanced personal game statistics and also a dedicated Stats Leaderboard with Top3 hackers of each category
+- Background music and sound effects
+- Tutorials: EliteHax offers an initial in-game tutorial to explain the basics of the game and also features a comprehensive up-to-date tutorial
+- Frequent Updates: the game is just at the beginning, many more features are already in roadmap!
+
+This is just a simulation game and doesn't involve any real hacking.
+The game is developed by a single developer with a lot of passion as an hobby, please send any bug report, feedback or suggestion to support@elitehax.it
+
+
+Don't miss the chance to enter in this amazing hacking simulator world and become the best hacker
