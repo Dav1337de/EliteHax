@@ -49,7 +49,7 @@ Before uploading the code to GitHub, I removed all the encryption keys, hardcode
 ### 2.1 Android App ###
 In the folder 'EliteHax app' you can find all the source code and resources (img/audio) regarding the Android app.
 
-The app is written in LUA using the former Corona SDK (https://coronalabs.com/ - when the 'Corona' terms had a completely different impact on our mind); the SDK is now called Solar2D (https://solar2d.com/) and I don't know if any change is required to build the project under Solar2D compared to Corona.
+The app is written in LUA using the former Corona SDK (https://coronalabs.com/ - when the 'Corona' word had a completely different impact on our mind); the SDK is now called Solar2D (https://solar2d.com/) and I don't know if any change is required to build the project under Solar2D compared to Corona.
 
 Another good option is to rebuild the Android app from scratch using a completely different language/framework/engine and just keep the EliteHax backend. It would require a bit more time and effort, but the result could be better since the UI was far from perfect and I have never been good at graphics.
 
