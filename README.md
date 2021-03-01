@@ -40,6 +40,13 @@ Since I don't have time to continue the development and take care of the server 
 
 I am very grateful to the community that always supported me, so I decided to release the source code under MIT License, hoping that someone will rebuild it and EliteHax could reborn from the ashes in the future. If someone will ever succeed, please let me know!
 
+If you didn't play EliteHax and wants to know how it looked like and behaved, here are some useful links:
+[Tutorial](https://dav1337de.github.io/EliteHax/)
+
+[Promo Video 1](https://www.youtube.com/watch?v=ltq-JR4i52E)
+
+[Promo Video 2](https://www.youtube.com/watch?v=XCUcyIbi5FM)
+
 ### 2. Resources ###
 I uploaded all the resources regarding the Android app, EliteHax backend, database schema and some other miscellaneous stuff that can be useful for a potential developer.
 I am not a professional developer, so the code could look a bit 'Spaghetti Code', but I'm from Italy and I love spaghetti! Jokes apart, there are some very useful comments here and there, read them and use them. Naming convention is also pretty good, although not perfect.
