@@ -41,6 +41,7 @@ Since I don't have time to continue the development and take care of the server 
 I am very grateful to the community that always supported me, so I decided to release the source code under MIT License, hoping that someone will rebuild it and EliteHax could reborn from the ashes in the future. If someone will ever succeed, please let me know!
 
 If you didn't play EliteHax and wants to know how it looked like and behaved, here are some useful links:
+
 [Tutorial](https://dav1337de.github.io/EliteHax/)
 
 [Promo Video 1](https://www.youtube.com/watch?v=ltq-JR4i52E)
